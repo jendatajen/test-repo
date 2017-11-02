@@ -34,7 +34,8 @@ Make a histogram of the total number of steps taken each day
 ```{r} 
 stepbyday <- tapply(activitydata$steps, activitydata$date, FUN=sum, na.rm=TRUE) 
 qplot(stepbyday, binwidth=1000, xlab="Steps taken each day", ylab = "Frequency")
-<img src="fig/unnamed-chunk-8-1.png" title="" alt="" width="1152" /> 
+
+![plot of unnamed-chunk-8-1.png](fig/unnamed-chunk-8-1.png) 
 mean(stepbyday, na.rm=TRUE) 
 ## [1] 9354.23
 median(stepbyday, na.rm=TRUE) 
